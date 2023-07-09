@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./bg.jpg">
+    <title>password</title>
+</head>
+<body>
+    <nav>
+        <h1><a href="https://romainsavigny.be/">Romain</a></h1>
+    </nav>
+    <div class="lines">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</div>
+
+    <div class="app">
+        <input type="text" id="password-output" value="Générateur de MDP" readonly>
+        <div class="range-container">
+            <input type="range" id="password-length" min="8" max="30" value="12" oninput="document.getElementById('display-password-length').value=this.value">
+            <input type="text" name="" id="display-password-length" value="12" readonly>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="lowercase" checked>
+            <label for="lowercase">a-z</label>
+            <input type="checkbox" id="uppercase" >
+            <label for="uppercase">A-Z</label>
+            <input type="checkbox" id="numbers" >
+            <label for="numbers">1-9</label>
+            <input type="checkbox" id="symbols" >
+            <label for="symbols">!-?</label>
+        </div>
+
+
+        <button id="generateButton">Generate Password</button>
+        
+
+    </div>
+        
+</body>
+<script src="./index.js"></script>
+</html>
